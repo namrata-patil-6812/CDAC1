@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namrata Patil - Resume</title>
+    <style>
+        body {
+            font-family: 'Aerial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            text-align: center;
+        }
+        p, li {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            font-size: 22px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .section-title {
+            margin-bottom: 10px;
+        }
+        .skills ul, .education ul, .certifications ul, .activities ul, .projects ul, .strengths ul {
+            padding-left: 20px;
+        }
+        .skills ul li, .education ul li, .certifications ul li, .activities ul li, .strengths ul li {
+            margin-bottom: 8px;
+        }
+        .internship, .projects, .strengths {
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 30px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .projects li {
+            margin-bottom: 15px;
+        }
+        .projects li strong {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Namrata Patil</h1>
+        <p>Raver, jalgaon 425001</p>
+        <p>Email: <a href="mailto:namrata.patil6812@gmail.com">namrata.patil6812@gmail.com</a></p>
+        <p>Phone: (+91) 7498484299</p>
+
+        <div class="section">
+            <h2 class="section-title">About Me</h2>
+            <p>Looking for a challenging role in a reputable organization to utilize my technical, database, and management skills for the growth of the organization as well as to enhance my knowledge about new and emerging trends in the IT sector.</p>
+        </div>
+
+        <div class="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul>
+                <li>C</li>
+                <li>DBMS</li>
+                <li>AWS</li>
+            </ul>
+        </div>
+
+        <div class="education">
+            <h2 class="section-title">Education</h2>
+            <ul>
+                <li>Bachelors of Engineering in Information Technology<br>Shri.Gulabrao Devkar College,Jalgaon<br><strong> 2022(CGPI: 8.18)</strong></li>
+                <li>diploma<br>SSmt.Sharadchandrika Suresh Patil College Of Technology,Chopda<br><strong>72%</strong></li>
+                <li>10th Grade<br>Pankaj Vidhyalay Chopdal<br><strong>83.50%</strong></li>
+            </ul>
+            <div class="projects">
+                <h2 class="section-title">Projects</h2>
+                <ul>
+                    <li><strong>Student Management System using HTML</strong><br>
+        </div>
+
+       
+        </div>
+        <div class="strengths">
+            <h2 class="section-title">Strengths</h2>
+            <ul>
+                <li>good listener</li>
+                <li>Team Player</li>
+                <li>creative</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

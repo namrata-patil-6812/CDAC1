@@ -1,0 +1,143 @@
+Exercixe 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function toUpperCase(str)
+        {
+            return str.toUpperCase();
+        }
+
+        function processData(input,UpperCase){
+            const result=UpperCase(input);
+            console.log(result);
+        }
+
+        processData("hello word",toUpperCase);
+    </script>
+</body>
+</html>
+
+exercise 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function forEachElement(array, callback){
+            for (var i=0; i<array.length;i++) {
+                  callback(array[i],i);
+            }
+        }
+
+        forEachElement([10,20,30,40,50],function(element,index){
+            console.log( `Index ${index}: ${element * 2}`);
+        });
+
+    </script>
+</body>
+</html>
+
+exercise 3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function fetchData(url,callback){
+        console.log(`fetching data from ${url}`);
+        setTimeout(function(){
+            const response = `Response from ${url}`;
+            callback(response);
+        },2000);
+      }
+
+      fetchData("www.google.com", function(response){
+        console.log(response);
+      });
+      
+    </script>
+</body>
+</html>
+
+exercise 4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fetchData(url,callback)
+        {
+            setTimeout (()=>
+        {
+            const error=Math.random()>0.5;
+            if(error)
+        {
+            callback("Error:N/W request failed",null);
+        }
+        else{
+            callback(null,`Success:Data fetched from ${url}`);
+        }      
+        },1000);
+        }
+        fetchData("https://api.example.com/data", (error, response) => {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log(response);
+        }
+    });
+    </script>
+</body>
+</html>
+
+exercise 5
+<script>
+    
+    function fetchData(url, callback) {
+        setTimeout(() => {
+            const error = Math.random() > 0.5;
+            if (error) {
+                callback("Error: Network request failed", null);
+            } else {
+                callback(null, `Fetched data from ${url}`);
+            }
+        }, 1000);
+    }
+
+    
+    function processData(data, callback) {
+        setTimeout(() => {
+            const processedData = `Processed data: ${data.toUpperCase()}`;
+            callback(processedData);
+        }, 500);
+    }
+
+    
+    fetchData("https://api.example.com/data", (error, response) => {
+        if (error) {
+            console.log(error);
+        } else {
+            processData(response, (processedData) => {
+                console.log(processedData);
+            });
+        }
+    });
+</script>
